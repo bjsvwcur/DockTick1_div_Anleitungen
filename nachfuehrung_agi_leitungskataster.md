@@ -10,6 +10,7 @@ Verantwortlicher: bjsvwcur
     Beispiel Gempen Abwasser:
 
     java -jar /home/XXXX/ilis/ilivalidator-1.9.3/ilivalidator-1.9.3.jar --log /home/XXXX/log.log /sogis/daten_tools/projekte/sogis/gemeindegis/Gempen/Interlis/Import/abwasser/Interlis-Export-Abwasser-Gempen-191025-a.itf
+   ```
   * Wenn die Prüfung fehlerfrei war im entspechende ili2pg-Skript den itf-Filenamen und dbhost anpassen.
   * Skript starten mit:
   ```
