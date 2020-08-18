@@ -1,5 +1,5 @@
 # Nachführung agi_Leitungskataster
-Verantwortlicher: bjsvwcur
+Verantwortlicher: @bjsvwcur
 
 ## Nachführung Schema agi_leitungskataster auf Edit-DB:
 * itf-File ablegen unter: G:\sogis\daten_tools\projekte\sogis\gemeindegis\<GEMEINDE>\Interlis\Import\<MEDIUM>\
