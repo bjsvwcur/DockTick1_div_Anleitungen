@@ -1,5 +1,5 @@
 # Nachführung agi_Leitungskataster
-Verantwortlicher: @bjsvwcur
+Verantwortlicher: bjsvwcur
 
 ## Nachführung Schema agi_leitungskataster auf Edit-DB:
 * itf-File ablegen unter: G:\sogis\daten_tools\projekte\sogis\gemeindegis\<GEMEINDE>\Interlis\Import\<MEDIUM>\
@@ -24,7 +24,7 @@ Verantwortlicher: @bjsvwcur
   ```
 ## Nachführung Schema agi_leitungskataster_pub auf Pub-DB
 * Wenn die Daten in der Edit-DB importiert sind, kann die Pub-DB mittels Gretljob nachgeführt werden
-* Gretljob ausführen: agi_leitungskataster
+* Gretljob ausführen: [agi_leitungskataster](https://github.com/sogis/gretljobs/tree/master/agi_leitungskataster_pub)
 ## Neue Gemeindedaten importieren (Gemeinde nocht nicht vorhanden in der Edit- und Pub-DB)
 * Auf der Pub-DB im Schema agi_leitungskataster_pub die Tabellen lk_<MEDIUM>_verfuegbarkeit anpassen (Wird für die Übersicht im Web GIS Client benötigt)
   * Bei der neuen Gemeinde das Attribut "verfuegbar" auf true setzen => Muss bei jedem neuen Medium pro Gemeinde gemacht werden.
