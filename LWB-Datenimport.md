@@ -32,8 +32,8 @@ Die Daten müssen entsprechend den Modellen gezippt werden.
   `SO_a_153_6_bewirtschaftungseinheiten_V1_3_20171201.xtf` zu `SO_a_153_6.xtf` und als `SO_153_6.zip` zippen.
 
 ### Import der Daten in die Integrationsumgebung
-Auf der Webseite `https://integration.geodienste.ch` einloggen. Benutzername1 und PW1 siehe KeepPass. 
-Im Anschluss muss man sich auf `https://integration.geodienste.ch` unter "Login" erneut einloggen. Benutzername2 und PW2 siehe KeePass.
+Auf der Webseite `https://integration.geodienste.ch` einloggen. BENUTZERNAME und PASSWORD siehe KeepPass. 
+Im Anschluss muss man sich auf `https://integration.geodienste.ch` unter "Login" erneut einloggen. 
 
 * Topic der Angebote ermitteln (definitive Daten)
 Wechsel auf die Seite Datenintegration > Konfiguration. Hier kann für jedes Angebot die technische Bezeichnung (topic) nachgeschlagen werden:
@@ -64,7 +64,7 @@ Wechsel auf die Seite Datenintegration > Konfiguration. Hier kann für jedes Ang
 Zip-Files einzeln mittels curl in die REST-Schnittstelle hochladen.
 ```
 z.B.
-curl -u <BENUTZERNAME2>:<PASSWORD2> -F topic= lwb_perimeter_ln_sf -F lv95_file=@/home/barpastu/shares/sogis_home/2018_MGDM_ALW/SO/SO_153_5.zip –F publish=true "https://integration.geodienste.ch/data_agg/interlis/import"
+curl -u <BENUTZERNAME>:<PASSWORD> -F topic= lwb_perimeter_ln_sf -F lv95_file=@/home/barpastu/shares/sogis_home/2018_MGDM_ALW/SO/SO_153_5.zip –F publish=true "https://integration.geodienste.ch/data_agg/interlis/import"
 ```
 * Datenimport
 Wechsel auf die Seite Datenintegration > Datenimport. Grundsätzlich werden Files, welche hochgeladen wurden automatisch hochgeladen. Falls nicht, kann der Datenimport manuell gestartet werden. 
@@ -74,7 +74,7 @@ Auf dieser Seite kann der Stand der Datenimporte geprüft werden.
 Nach dem die Daten hochgeladen und importiert wurden müssen sie auch noch veröffentlich werden. Dazu muss auf die Seite Datenintegration > Veröffentlichung gewechselt werden. Bei Angebot wird das entsprechend zu veröffentlichende Angebot ausgewählt und bei Geplanter Start der Startzeitpunkt für die Veröffentlichung angegeben.
 
 ### Import der Daten in die Produktionsumgebung
-Auf die Webseite `https://geodienste.ch` mit Benutzer (<BENUTZERNAME2> / <PASSWORD2>) einloggen und anschliessend gleiches Vorgehen wie bei Kapitel 2.
+Auf die Webseite `https://geodienste.ch` mit Benutzer (<BENUTZERNAME> / <PASSWORD>) einloggen und anschliessend gleiches Vorgehen wie bei Kapitel 2.
 ```
 URL in curl-Aufruf ändern. Z.B.
 curl -u <BENUTZERNAME2>:<PASSWORD2> -F topic= lwb_perimeter_ln_sf -F lv95_file=@/home/barpastu/shares/sogis_home/2018_MGDM_ALW/SO/SO_153_5.zip –F publish=true "https://geodienste.ch/data_agg/interlis/import"
