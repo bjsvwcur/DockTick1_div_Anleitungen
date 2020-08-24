@@ -4,7 +4,7 @@ Verantwortlicher: Sandra Curiger
 
 ## Vorgehen Nachführung Schema agi_leitungskataster auf Edit-DB:
 * itf-File ablegen unter: `G:\sogis\daten_tools\projekte\sogis\gemeindegis\<GEMEINDE>\Interlis\Import\<MEDIUM>\`
-* auf geoutil in das Verzeichnis `/sogis/daten_tools/skripte/db_schema_definition_edit/agi_leitungskataster/v1` wechseln
+* auf `geoutil` in das Verzeichnis `/sogis/daten_tools/skripte/db_schema_definition_edit/agi_leitungskataster/v1` wechseln
   * unter diesem Verzeichnis sind von allen bereits bestehenden Gemeindedaten die ili2pg-Skripte vorhanden (ili2pg_dataimport_<BSF-Nr>_<MEDIUM>.sh)
   * itf-File prüfen mit dem ilivalidator
   ```
