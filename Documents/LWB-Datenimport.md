@@ -31,7 +31,7 @@ Die Daten müssen entsprechend den Modellen gezippt werden.
 
   `SO_a_153_6_bewirtschaftungseinheiten_V1_3_20171201.xtf` zu `SO_a_153_6.xtf` und als `SO_153_6.zip` zippen.
 
-### Import der Daten in die Integrationsumgebung
+### Import der Daten in die Integrationsumgebung:
 Auf der Webseite `https://integration.geodienste.ch` einloggen. BENUTZERNAME und PASSWORD siehe KeepPass. 
 Im Anschluss muss man sich auf `https://integration.geodienste.ch` unter "Login" erneut einloggen. 
 
@@ -73,7 +73,7 @@ Auf dieser Seite kann der Stand der Datenimporte geprüft werden.
 * Datenveröffentlichung
 Nach dem die Daten hochgeladen und importiert wurden müssen sie auch noch veröffentlich werden. Dazu muss auf die Seite Datenintegration > Veröffentlichung gewechselt werden. Bei Angebot wird das entsprechend zu veröffentlichende Angebot ausgewählt und bei Geplanter Start der Startzeitpunkt für die Veröffentlichung angegeben.
 
-### Import der Daten in die Produktionsumgebung
+### Import der Daten in die Produktionsumgebung:
 Auf die Webseite `https://geodienste.ch` mit Benutzer (<BENUTZERNAME> / <PASSWORD>) einloggen und anschliessend gleiches Vorgehen wie bei Kapitel 2.
 ```
 URL in curl-Aufruf ändern. Z.B.
