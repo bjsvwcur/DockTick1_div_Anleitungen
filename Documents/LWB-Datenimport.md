@@ -1,5 +1,5 @@
 # Nachführung LWB-Datenimport (MGDM-Lieferung) an die Aggregationsinfrastruktur
-Verantwortlicher: bjsvwcur
+Verantwortlicher: Sandra Curiger
 
 ## Beschreibung:
 LWB-Datenlieferung in Aggregation Infrastruktur importieren
