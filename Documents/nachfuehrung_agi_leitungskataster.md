@@ -29,7 +29,7 @@ Verantwortlicher: Sandra Curiger
 * Gretljob ausführen: [agi_leitungskataster](https://github.com/sogis/gretljobs/tree/master/agi_leitungskataster_pub)
  
 ## Vorgehen Neue Gemeindedaten importieren (Gemeinde nocht nicht vorhanden in der Edit- und Pub-DB)
-* Auf der Pub-DB im Schema agi_leitungskataster_pub die Tabellen `lk_<MEDIUM>_verfuegbarkeit` anpassen (Wird für die Übersicht im Web GIS Client benötigt)
+* Auf der Pub-DB im Schema `agi_leitungskataster_pub` die Tabellen `lk_<MEDIUM>_verfuegbarkeit` anpassen (Wird für die Übersicht im Web GIS Client benötigt)
   * Bei der neuen Gemeinde das Attribut `"verfuegbar"` auf true setzen => Muss bei jedem neuen Medium pro Gemeinde gemacht werden.
 * auf `geoutil` in das Verzeichnis `/sogis/daten_tools/skripte/db_schema_definition_edit/agi_leitungskataster/v1` wechseln
   * pro neues Medium ein ili2pg-File erstellen (ein bestehenes von einer anderen Gemeinde kopieren und anpassen)
