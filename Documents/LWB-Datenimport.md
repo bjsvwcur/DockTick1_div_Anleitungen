@@ -64,7 +64,7 @@ Wechsel auf die Seite Datenintegration > Konfiguration. Hier kann für jedes Ang
 Zip-Files einzeln mittels curl in die REST-Schnittstelle hochladen.
 ```
 z.B.
-curl -u <BENUTZERNAME>:<PASSWORD> -F topic= lwb_perimeter_ln_sf -F lv95_file=@/home/barpastu/shares/sogis_home/2018_MGDM_ALW/SO/SO_153_5.zip –F publish=true "https://integration.geodienste.ch/data_agg/interlis/import"
+curl -u <BENUTZERNAME>:<PASSWORD> -F topic= lwb_perimeter_ln_sf -F lv95_file=@/home/<PFAD>/SO_153_5.zip –F publish=true "https://integration.geodienste.ch/data_agg/interlis/import"
 ```
 * Datenimport
 Wechsel auf die Seite Datenintegration > Datenimport. Grundsätzlich werden Files, welche hochgeladen wurden automatisch hochgeladen. Falls nicht, kann der Datenimport manuell gestartet werden. 
@@ -77,7 +77,7 @@ Nach dem die Daten hochgeladen und importiert wurden müssen sie auch noch verö
 Auf die Webseite `https://geodienste.ch` mit Benutzer (<BENUTZERNAME> / <PASSWORD>) einloggen und anschliessend gleiches Vorgehen wie bei Kapitel 2.
 ```
 URL in curl-Aufruf ändern. Z.B.
-curl -u <BENUTZERNAME>:<PASSWORD> -F topic= lwb_perimeter_ln_sf -F lv95_file=@/home/barpastu/shares/sogis_home/2018_MGDM_ALW/SO/SO_153_5.zip –F publish=true "https://geodienste.ch/data_agg/interlis/import"
+curl -u <BENUTZERNAME>:<PASSWORD> -F topic= lwb_perimeter_ln_sf -F lv95_file=@/home/<PFAD>/SO_153_5.zip –F publish=true "https://geodienste.ch/data_agg/interlis/import"
 ```
 
 
