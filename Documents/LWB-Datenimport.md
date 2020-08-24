@@ -74,7 +74,7 @@ Auf dieser Seite kann der Stand der Datenimporte geprüft werden.
 Nach dem die Daten hochgeladen und importiert wurden müssen sie auch noch veröffentlich werden. Dazu muss auf die Seite Datenintegration > Veröffentlichung gewechselt werden. Bei Angebot wird das entsprechend zu veröffentlichende Angebot ausgewählt und bei Geplanter Start der Startzeitpunkt für die Veröffentlichung angegeben.
 
 ### Import der Daten in die Produktionsumgebung:
-Auf die Webseite `https://geodienste.ch` mit Benutzer (<BENUTZERNAME> / <PASSWORD>) einloggen und anschliessend gleiches Vorgehen wie bei Kapitel 2.
+Auf die Webseite `https://geodienste.ch` mit Benutzer (BENUTZERNAME und PASSWORD siehe KeepPass) einloggen und anschliessend gleiches Vorgehen wie bei Kapitel "Import der Daten in die Integrationsumgebung".
 ```
 URL in curl-Aufruf ändern. Z.B.
 curl -u <BENUTZERNAME>:<PASSWORD> -F topic= lwb_perimeter_ln_sf -F lv95_file=@/home/<PFAD>/SO_153_5.zip –F publish=true "https://geodienste.ch/data_agg/interlis/import"
