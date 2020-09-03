@@ -2,10 +2,17 @@
 Verantwortlicher: Sandra Curiger
 
 ## Beschreibung:
-LWB-Datenlieferung in Aggregation Infrastruktur importieren
+LWB-Datenlieferung in Aggregation Infrastruktur importieren.
+
+Die INTERLIS-Transferdateien der jeweiligen Modelle (ID151/153) werden vom Kanton Bern für die drei GELAN-Kantone ein- bis zweimal jährlich hergestellt und auf einer Filesharing-Plattform als ZIP-Datei bereitgestellt. 
+### Auslöser:
+Bau-, Verkehrs- und Energiedirektion des Kantons Bern (BVE), Beutner Sabine BVE-AGI-GBD <sabine.beutner@bve.be.ch>
+
+### Häufigkeit:
+1- bis 2 Mal jährlich
 
 ## Auftrag:
-"H:\BJSVW\Agi\Projekte\ALW\MGDM-AI-Lieferungen ID151 ID153"
+`"H:\BJSVW\Agi\Projekte\ALW\MGDM-AI-Lieferungen ID151 ID153"`
 
 ## Ablauf Nachführung:
 ###	Vorbereitung der Daten
@@ -36,32 +43,11 @@ Auf der Webseite `https://integration.geodienste.ch` einloggen. BENUTZERNAME und
 Im Anschluss muss man sich auf `https://integration.geodienste.ch` unter "Login" erneut einloggen. 
 
 * Topic der Angebote ermitteln (definitive Daten)
-Wechsel auf die Seite Datenintegration > Konfiguration. Hier kann für jedes Angebot die technische Bezeichnung (topic) nachgeschlagen werden:
-  * Rebbaukataster
-    - Angebot: Landw. Bewirtschaftung: Rebbaukataster 
-    - Topic: lwb_rebbaukataster
-  * Nutzungsflächen
-    - Angebot: Landw. Bewirtschaftung: Nutzungsflächen
-    - Topic: lwb_nutzungsflaechen
-  * Biodiversitätsförderflächen Qualitätsstufe II und Vernetzung
-    - Angebot: Landw. Bewirtschaftung: Biodiversitätsförderflächen, Qualitätsstufe II und Vernetzung
-    - Topic: lwb_biodiversitaetsfoerderflaechen
-  * Perimeter LN- und Sömmerungsflächen
-    - Angebot: Landw. Bewirtschaftung: Perimeter LN- und Sömmerungsflächen
-    - Topic: lwb_perimeter_ln_sf
-  * Bewirtschaftungseinheit
-    - Angebot: Landw. Bewirtschaftung: Bewirtschaftungseinheit
-    - Topic: lwb_bewirtschaftungseinheit
+  * Wechsel auf die Seite Datenintegration > Konfiguration. Hier kann für jedes Angebot die technische Bezeichnung (`topic`) nachgeschlagen werden:
 * Topic der Angebote ermitteln (provisorische Daten)
-Wechsel auf die Seite Datenintegration > Konfiguration. Hier kann für jedes Angebot die technische Bezeichnung (topic) nachgeschlagen werden:
-  * Perimeter LN- und Sömmerungsflächen
-    - Angebot: Landw. Bewirtschaftung: Perimeter LN- und Sömmerungsflächen, verwaltungsintern
-    - Topic: lwb_perimeter_ln_sf_intern
-  * Bewirtschaftungseinheit
-    - Angebot: Landw. Bewirtschaftung: Bewirtschaftungseinheit, verwaltungsintern
-    - Topic: lwb_bewirtschaftungseinheit_intern
+  * Wechsel auf die Seite Datenintegration > Konfiguration. Hier kann für jedes Angebot die technische Bezeichnung (`topic`) nachgeschlagen werden:
 * Datenupload
-Zip-Files einzeln mittels curl in die REST-Schnittstelle hochladen.
+  * Zip-Files einzeln mittels curl in die REST-Schnittstelle hochladen.
 ```
 z.B.
 curl -u <BENUTZERNAME>:<PASSWORD> -F topic= lwb_perimeter_ln_sf -F lv95_file=@/home/<PFAD>/SO_153_5.zip –F publish=true "https://integration.geodienste.ch/data_agg/interlis/import"
