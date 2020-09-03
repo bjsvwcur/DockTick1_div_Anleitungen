@@ -7,11 +7,9 @@ LWB-Datenlieferung in Aggregation Infrastruktur importieren.
 Die INTERLIS-Transferdateien der jeweiligen Modelle (ID151/153) werden vom Kanton Bern für die drei GELAN-Kantone ein- bis zweimal jährlich hergestellt und auf einer Filesharing-Plattform als ZIP-Datei bereitgestellt. 
 ### Auslöser:
 Bau-, Verkehrs- und Energiedirektion des Kantons Bern (BVE), Beutner Sabine BVE-AGI-GBD <sabine.beutner@bve.be.ch>
-
 ### Häufigkeit:
 1- bis 2 Mal jährlich
-
-## Auftrag:
+### Auftrag:
 `"H:\BJSVW\Agi\Projekte\ALW\MGDM-AI-Lieferungen ID151 ID153"`
 
 ## Ablauf Nachführung:
