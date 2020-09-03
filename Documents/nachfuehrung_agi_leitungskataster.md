@@ -1,7 +1,16 @@
 # Nachführung agi_Leitungskataster
 
 Verantwortlicher: Sandra Curiger
+## Beschreibung:
+Dezentraler Import der kommunalen Leitungskataster in die SO!GIS Datenhaltung.
 
+Für verschiedene Solothurner Gemeinden werden die Daten der Leitungskataster in die SO!GIS Geodaten Infrastruktur (GDI) integriert. Die von verschiedenen Ingenieur-Büros erhoben Daten werden den Gemeinden über den Web GIS Cleint zur Verfügung gestellt. 
+### Auslöser:
+Ingenieur-Büros mit der Nachführung des Leitungskatasterdaten.
+### Häufigkeit:
+ca. 4 Imports jährlich
+### Auftrag:
+`"H:\BJSVW\Agi\GemeindeGIS"`
 ## Vorgehen Nachführung Schema agi_leitungskataster auf Edit-DB:
 * itf-File ablegen unter: `G:\sogis\daten_tools\projekte\sogis\gemeindegis\<GEMEINDE>\Interlis\Import\<MEDIUM>\`
 * auf `geoutil` in das Verzeichnis `/sogis/daten_tools/skripte/db_schema_definition_edit/agi_leitungskataster/v1` wechseln
