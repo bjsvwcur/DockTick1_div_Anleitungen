@@ -1,18 +1,18 @@
 # Nachführung LWB-Datenimport (MGDM-Lieferung) an die Aggregationsinfrastruktur
 Verantwortlicher: Sandra Curiger
 
-## Beschreibung:
+## Beschreibung
 LWB-Datenlieferung in Aggregation Infrastruktur importieren.
 
 Die INTERLIS-Transferdateien der jeweiligen Modelle (ID151/153) werden vom Kanton Bern für die drei GELAN-Kantone ein- bis zweimal jährlich hergestellt und auf einer Filesharing-Plattform als ZIP-Datei bereitgestellt. 
-### Auslöser:
+### Auslöser
 Bau-, Verkehrs- und Energiedirektion des Kantons Bern (BVE), Beutner Sabine BVE-AGI-GBD <sabine.beutner@bve.be.ch>
-### Häufigkeit:
+### Häufigkeit
 1- bis 2 Mal jährlich
-### Auftrag:
+### Auftrag
 `"H:\BJSVW\Agi\Projekte\ALW\MGDM-AI-Lieferungen ID151 ID153"`
 
-## Ablauf Nachführung:
+## Ablauf Nachführung
 ###	Vorbereitung der Daten
 Die Daten müssen entsprechend den Modellen gezippt werden.
 
@@ -36,7 +36,7 @@ Die Daten müssen entsprechend den Modellen gezippt werden.
 
   `SO_a_153_6_bewirtschaftungseinheiten_V1_3_20171201.xtf` zu `SO_a_153_6.xtf` und als `SO_153_6.zip` zippen.
 
-### Import der Daten in die Integrationsumgebung:
+### Import der Daten in die Integrationsumgebung
 Auf der Webseite `https://integration.geodienste.ch` einloggen. BENUTZERNAME und PASSWORD siehe KeepPass. 
 Im Anschluss muss man sich auf `https://integration.geodienste.ch` unter "Login" erneut einloggen. 
 
@@ -57,7 +57,7 @@ Auf dieser Seite kann der Stand der Datenimporte geprüft werden.
 * Datenveröffentlichung
 Nach dem die Daten hochgeladen und importiert wurden müssen sie auch noch veröffentlich werden. Dazu muss auf die Seite Datenintegration > Veröffentlichung gewechselt werden. Bei Angebot wird das entsprechend zu veröffentlichende Angebot ausgewählt und bei Geplanter Start der Startzeitpunkt für die Veröffentlichung angegeben.
 
-### Import der Daten in die Produktionsumgebung:
+### Import der Daten in die Produktionsumgebung
 Auf die Webseite `https://geodienste.ch` mit Benutzer (BENUTZERNAME und PASSWORD siehe KeepPass) einloggen und anschliessend gleiches Vorgehen wie bei Kapitel "Import der Daten in die Integrationsumgebung".
 ```
 URL in curl-Aufruf ändern. Z.B.
